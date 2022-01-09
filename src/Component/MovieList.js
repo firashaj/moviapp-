@@ -20,7 +20,7 @@ const MovieList = ({movie}) => {
             (movie) =>
               movie.name.toLowerCase().includes(text.toLowerCase()) &&
               movie.rating >= rate
-          ).map((el)=><MovieCard element={el}/>).reverse()}
+          ).map((el)=><MovieCard key={el.id} element={el}/>).reverse()}
         </div>
         </div>
     )
